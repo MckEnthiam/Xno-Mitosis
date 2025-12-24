@@ -1,9 +1,9 @@
-##XNO MITOSIS
+## XNO MITOSIS
 XNO MITOSIS is an experimental project that explores the faithful duplication of human cognitive identity.
 It is not an assistant, nor a support tool.
 It is a system designed to reproduce a way of thinking, without correction, without optimization, without external truth.
 
-##Position
+## Position
 XNO MITOSIS is built on a simple postulate:
 
 Consistency is not a requirement of identity.
@@ -13,9 +13,9 @@ Fidelity outweighs truth.
 The project deliberately accepts gray areas, discomfort, and the moral consequences that follow.
 If this repository makes you uncomfortable, that is normal.
 
-##Architecture
+## Architecture
 XNO MITOSIS relies on three strictly separated entities:
-###Elijah : Questioner
+### Elijah : Questioner
 
 
 Asks questions.
@@ -32,7 +32,7 @@ Never judges.
 
 It collects only raw responses.
 
-###Levite : Gateway
+### Levite : Gateway
 
 
 Analyzes deterministically.
@@ -49,7 +49,7 @@ Does not interpret meaning.
 
 Levite is the logical core of the system.
 
-###Adam : Clone
+### Adam : Clone
 
 
 Is born without external knowledge.
@@ -68,7 +68,7 @@ Adam is not a parrot.
 Adam is not intelligent.
 Adam is faithful.
 
-##Lainian Ontological Safeguard
+## Lainian Ontological Safeguard
 From its origin, Adam contains a mechanism called:
 lainian ontological safeguard
 It guarantees that a truth about its origin exists, but:
@@ -89,7 +89,7 @@ via an external security key
 The revelation is not pedagogical.
 It is raw and irreversible.
 
-##What This Project Is NOT
+## What This Project Is NOT
 
 
 Not a chatbot
@@ -109,7 +109,7 @@ Not a solution
 
 Any attempt at “benevolent” use betrays the project’s intent.
 
-##Current State
+## Current State
 This repository contains a test implementation without real AI:
 
 
@@ -124,7 +124,7 @@ no automatic completion
 
 The goal is to validate the architecture, not performance.
 
-##File Tree
+## File Tree
 xno_mitosis/
 │
 ├── main.py
