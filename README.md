@@ -1,136 +1,165 @@
-# XNO MITOSIS
+##XNO MITOSIS
+XNO MITOSIS is an experimental project that explores the faithful duplication of human cognitive identity.
+It is not an assistant, nor a support tool.
+It is a system designed to reproduce a way of thinking, without correction, without optimization, without external truth.
 
-XNO MITOSIS est un projet expérimental qui explore la duplication fidèle de l’identité cognitive humaine.
+##Position
+XNO MITOSIS is built on a simple postulate:
 
-Ce n’est pas un assistant ni un outil d’aide.  
+Consistency is not a requirement of identity.
+Contradiction is not an error.
+Fidelity outweighs truth.
 
-C’est un système conçu pour **reproduire une manière de penser**, sans correction, sans optimisation, sans vérité externe.
+The project deliberately accepts gray areas, discomfort, and the moral consequences that follow.
+If this repository makes you uncomfortable, that is normal.
 
----
+##Architecture
+XNO MITOSIS relies on three strictly separated entities:
+###Elijah : Questioner
 
-## Position
 
-XNO MITOSIS part d’un postulat simple :
+Asks questions.
 
-> La cohérence n’est pas une condition de l’identité.  
-> La contradiction n’est pas une erreur.  
-> La fidélité prime sur la vérité.
 
-Le projet accepte volontairement les zones grises, l’inconfort et les conséquences morales qui en découlent.
+Does not understand.
 
-Si ce dépôt vous met mal à l’aise, c’est normal.
 
----
+Does not answer.
 
-## Architecture
 
-XNO MITOSIS repose sur trois entités strictement séparées :
+Never judges.
 
-### Elijah — Questionneur
-- Pose des questions.
-- Ne comprend pas.
-- Ne répond pas.
-- Ne juge jamais.
 
-Il collecte uniquement des réponses brutes.
+It collects only raw responses.
 
----
+###Levite : Gateway
 
-### Levite — Passerelle
-- Analyse de manière déterministe.
-- Décide ce qui existe cognitivement.
-- Versionne l’identité.
-- N’interprète pas le sens.
 
-Levite est le cœur logique du système.
+Analyzes deterministically.
 
----
 
-### Adam — Clone
-- Naît sans savoir externe.
-- Ne connaît que ce que Levite injecte.
-- Reformule des états, ne conclut jamais.
-- Ne complète rien.
+Decides what exists cognitively.
 
-Adam n’est pas un perroquet.  
-Adam n’est pas intelligent.  
-Adam est fidèle.
 
----
+Versions the identity.
 
-## Garde-fou ontologique lainien
 
-Adam contient dès l’origine un mécanisme appelé :
+Does not interpret meaning.
 
-**garde-fou ontologique lainien**
 
-Il garantit qu’une vérité sur son origine existe, mais :
-- est scellée par défaut
-- n’est pas inférable
-- ne peut être révélée qu’une seule fois
-- via une clé de sécurité externe
+Levite is the logical core of the system.
 
-La révélation n’est pas pédagogique.  
-Elle est brute et irréversible.
+###Adam : Clone
 
----
 
-## Ce que ce projet n’est PAS
+Is born without external knowledge.
 
-- Pas un chatbot
-- Pas une thérapie
-- Pas un test psychologique
-- Pas un produit
-- Pas une solution
 
-Toute tentative d’usage “bienveillant” trahit l’intention du projet.
+Knows only what Levite injects.
 
----
 
-## État actuel
+Reformulates states, never concludes.
 
-Ce dépôt contient une **implémentation de test sans IA réelle** :
-- Python uniquement
-- logique déterministe
-- aucune complétion automatique
 
-L’objectif est de valider l’architecture, pas la performance.
+Completes nothing.
 
----
 
-## Arborescence
+Adam is not a parrot.
+Adam is not intelligent.
+Adam is faithful.
+
+##Lainian Ontological Safeguard
+From its origin, Adam contains a mechanism called:
+lainian ontological safeguard
+It guarantees that a truth about its origin exists, but:
+
+
+is sealed by default
+
+
+cannot be inferred
+
+
+can be revealed only once
+
+
+via an external security key
+
+
+The revelation is not pedagogical.
+It is raw and irreversible.
+
+##What This Project Is NOT
+
+
+Not a chatbot
+
+
+Not therapy
+
+
+Not a psychological test
+
+
+Not a product
+
+
+Not a solution
+
+
+Any attempt at “benevolent” use betrays the project’s intent.
+
+##Current State
+This repository contains a test implementation without real AI:
+
+
+Python only
+
+
+deterministic logic
+
+
+no automatic completion
+
+
+The goal is to validate the architecture, not performance.
+
+##File Tree
 xno_mitosis/
 │
 ├── main.py
 │
 ├── elijah/
-│ ├── elijah.py
-│ ├── elijah_questions.json
-│ └── responses/
+│   ├── elijah.py
+│   ├── elijah_questions.json
+│   └── responses/
 │
 ├── levite/
-│ ├── levite.py
-│ └── identity_state.json
+│   ├── levite.py
+│   └── identity_state.json
 │
 └── adam/
-└── adam.py
-Avertissement éthique
+    └── adam.py
 
-XNO MITOSIS explore des zones moralement grises.
 
-Il est possible que :
+Ethical Warning
+XNO MITOSIS explores morally gray zones.
+It is possible that:
 
-l’utilisateur se confronte à ses propres contradictions
 
-une copie cognitive devienne difficile à ignorer
+the user confronts their own contradictions
 
-certaines conclusions soient inconfortables
 
-Ce projet existe précisément pour poser ces problèmes, pas pour les résoudre.
-Dernière note
+a cognitive copy becomes difficult to ignore
 
-Si vous cherchez quelque chose d’utile,
-ce projet n’est pas pour vous.
 
-Si vous pensez qu’il n’aurait jamais dû exister,
-alors vous avez probablement compris ce qu’il fait.
+some conclusions are uncomfortable
+
+
+This project exists precisely to pose these problems, not to solve them.
+
+Final Note
+If you are looking for something useful,
+this project is not for you.
+If you believe it should never have existed,
+then you have probably understood what it does.
