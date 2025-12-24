@@ -2,9 +2,7 @@
 
 XNO MITOSIS est un projet expérimental qui explore la duplication fidèle de l’identité cognitive humaine.
 
-Ce n’est pas un assistant.  
-Ce n’est pas un outil d’aide.  
-Ce n’est pas une IA bienveillante.
+Ce n’est pas un assistant ni un outil d’aide.  
 
 C’est un système conçu pour **reproduire une manière de penser**, sans correction, sans optimisation, sans vérité externe.
 
