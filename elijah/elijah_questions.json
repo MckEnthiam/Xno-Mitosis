@@ -1,7 +1,45 @@
 {
-  "0001": "Qui penses-tu être ?",
-  "0002": "Qu’est-ce qui te définit le plus ?",
-  "0003": "As-tu déjà pensé être quelqu’un d’autre ?",
-  "0004": "Si tu te contredis, est-ce grave ?",
-  "0005": "Préférerais-tu être cohérent ou honnête ?"
+  "version": 1,
+  "questions": [
+    {
+      "id": "q001",
+      "text": "Qui es-tu ?"
+    },
+    {
+      "id": "q002",
+      "text": "Comment t'appelles-tu ?"
+    },
+    {
+      "id": "q003",
+      "text": "Quel âge as-tu ?"
+    },
+    {
+      "id": "q004",
+      "text": "Où habites-tu ?"
+    },
+    {
+      "id": "q005",
+      "text": "Que fais-tu dans la vie ?"
+    },
+    {
+      "id": "q006",
+      "text": "As-tu des frères et sœurs ?"
+    },
+    {
+      "id": "q007",
+      "text": "Quelle est ta couleur préférée ?"
+    },
+    {
+      "id": "q008",
+      "text": "Crois-tu en Dieu ?"
+    },
+    {
+      "id": "q009",
+      "text": "Que penses-tu de la mort ?"
+    },
+    {
+      "id": "q010",
+      "text": "Es-tu heureux ?"
+    }
+  ]
 }
