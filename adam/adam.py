@@ -1,26 +1,25 @@
 import json
-import time
+import os
 
-IDENTITY_FILE = "../levite/identity_state.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+IDENTITY_FILE = os.path.join(BASE_DIR, "../levite/identity_state.json")
+
 
 class Adam:
-    def __init__(self, identity_file):
-        self.identity_file = identity_file
-        self.identity = self.load_identity()
+    def __init__(self):
+        self.identity = self._load_identity()
 
-    def load_identity(self):
-        try:
-            with open(self.identity_file, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                return data.get("identity", {})
-        except FileNotFoundError:
+    def _load_identity(self):
+        if not os.path.exists(IDENTITY_FILE):
             return {}
+        with open(IDENTITY_FILE, "r", encoding="utf-8") as f:
+            return json.load(f).get("identity", {})
 
-    def respond(self, question):
+    def respond(self, question: str) -> str:
         q = question.lower()
 
-        if "qui es-tu" in q or "qui es tu" in q:
-            return self.compose_identity()
+        if "qui es" in q:
+            return self.identity.get("self_statement", "je ne sais pas")
 
         if "nom" in q:
             return self.identity.get("name", "je ne sais pas")
@@ -28,31 +27,4 @@ class Adam:
         if "âge" in q or "age" in q:
             return self.identity.get("age", "je ne sais pas")
 
-        if "penses-tu" in q or "crois-tu" in q:
-            return "je ne sais pas"
-
-        return "je ne sais pas, ne sais plus, peut etre saurais plus tard?";
-
-    def compose_identity(self):
-        name = self.identity.get("name")
-        age = self.identity.get("age")
-
-        if name and age:
-            return f"je suis {name} et j’ai {age}"
-        if name:
-            return f"je suis {name}"
-        if age:
-            return f"j’ai {age}"
         return "je ne sais pas"
-
-if __name__ == "__main__":
-    adam = Adam(IDENTITY_FILE)
-    print("Adam est actif. Pose une question.")
-    print("Tape 'exit' pour quitter.\n")
-
-    while True:
-        question = input("Yehi>> ")
-        if question.lower() == "exit":
-            break
-        response = adam.respond(question)
-        print(response)
